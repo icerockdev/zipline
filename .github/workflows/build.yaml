@@ -173,7 +173,7 @@ jobs:
           path: build/dokka/htmlMultiModule/
           if-no-files-found: error
 
-      - run: ./gradlew publishToMavenCentral
+      - run: ./gradlew publishJvmPublicationToMavenCentralRepository publishAndroidReleasePublicationToMavenCentralRepository
         if: ${{ github.ref == 'refs/heads/trunk' && github.repository == 'cashapp/zipline' }}
         env:
           ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.SONATYPE_CENTRAL_USERNAME }}
