@@ -1,4 +1,4 @@
 jdk:
   - openjdk17
 install:
-  - ./gradlew clean -Pgroup=$GROUP -Pversion=$VERSION -xtest -xlint -xsignMavenPublication publishAndroidReleasePublicationToMavenLocal
+  - ./gradlew clean -Pgroup=$GROUP -Pversion=$VERSION -xtest -xlint -xsignMavenPublication publishAndroidReleasePublicationToMavenLocal publishJvmPublicationToMavenLocal
