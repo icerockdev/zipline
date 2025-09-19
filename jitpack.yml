@@ -1,2 +1,4 @@
 install:
   - sdkmanager "cmake;3.22.1" "ndk;25.2.9519653"
+  - ./gradlew clean -Pgroup=$GROUP -Pversion=$VERSION xtest -xlint installArchives
+
