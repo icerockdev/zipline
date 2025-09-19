@@ -1,2 +1,4 @@
 jdk:
   - openjdk11
+install:
+  - ./gradlew clean -Pgroup=$GROUP -Pversion=$VERSION -xandroidJavadocs -xjavadoc -xtest -xlint -xsignMavenPublication installArchives
